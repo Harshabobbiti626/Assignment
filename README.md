@@ -16,11 +16,24 @@ This API provides a simple way to calculate BMI by sending weight and height val
 - API health check endpoint
 - Logging to both console and file
 
+
+## Design
+
+d:\MERN Stack\assign\
+├── api\
+│   ├── app.py
+│   └── requirements.txt
+└── client\
+    ├── public\
+    └── src\
+    
 ## Requirements
 
 - Python 3.6+
 - Flask
 - Flask-CORS
+- Supervisor python
+- Linux systemctl
 
 ## Installation
 
