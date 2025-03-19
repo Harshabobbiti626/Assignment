@@ -58,9 +58,14 @@ pip install flask flask-cors
 ## Running the Application
 
 Start the API server:
-
+make sure the path you currently is in \assign\api
 ```bash
 python api/app.py
+```
+Start the react client:
+make sure the path you currently is in \assign\client
+```bash
+npm start client
 ```
 
 The API will be available at http://127.0.0.1:5000/
