@@ -1,0 +1,22 @@
+[Unit]
+Description=BMI Calculator Flask API
+After=network.target
+
+[Service]
+Type=simple
+User=harshabobbiti626
+Group=harshabobbiti626
+WorkingDirectory=/mnt/d/MERN Stack/assign/api
+Environment=PYTHONUNBUFFERED=1
+Environment=FLASK_APP=app.py
+Environment=FLASK_ENV=production
+ExecStart=/usr/bin/python3 app.py
+StandardOutput=append:/var/log/bmi-api.out.log
+StandardError=append:/var/log/bmi-api.err.log
+Restart=on-failure
+RestartSec=5
+StartLimitIntervalSec=60
+StartLimitBurst=3
+
+[Install]
+WantedBy=multi-user.target
